@@ -4,11 +4,9 @@ function calcShipping(sum, min, shipping) {
     let shippingPrice = shipping; // стоимость доставки
 
     let shippingSum = 0; // создайте переменную shippingSum
-    if(productsSum = 0){ // если productsSum равно 0,
-        shippingSum = 0; // то shippingSum присвоить значение 0
-    } else if(productsSum >= freeShippingMinSum){ // если productsSum Больше или равна freeShippingMinSum,
-        shippingSum = 0; // то shippingSum присвоить значение 0
-    } else if(0 < productsSum < freeShippingMinSum){ // если productsSum больше 0 и меньше freeShippingMinSum,
+    if(productsSum == 0 || productsSum >= freeShippingMinSum){ 
+        shippingSum = 0; // 
+    } else (0 < productsSum < freeShippingMinSum){ // если productsSum больше 0 и меньше freeShippingMinSum,
         shippingSum = shippingPrice; // то shippingSum присвоить значение shippingPrice
     }
    
