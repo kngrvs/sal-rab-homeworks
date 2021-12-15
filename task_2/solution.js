@@ -3,7 +3,7 @@ function calcShipping(sum, min, shipping) {
     let freeShippingMinSum = min; // минимальная цена для бесплатной доставки
     let shippingPrice = shipping; // стоимость доставки
 
-    let shippingSum = 0; // создайте переменную shippingSum
+    let shippingSum; // создайте переменную shippingSum
     if(productsSum == 0 || productsSum >= freeShippingMinSum){ 
         shippingSum = 0; 
     } else ((0 < productsSum) && (productsSum < freeShippingMinSum)); // если productsSum больше 0 и меньше freeShippingMinSum,
