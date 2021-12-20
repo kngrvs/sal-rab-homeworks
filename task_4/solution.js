@@ -1,7 +1,7 @@
 
 function parseProducts(json) {
     data = JSON.parse(json);
-    parseProducts(data.products);
+    products = data.products;
 }
 return products;
 
