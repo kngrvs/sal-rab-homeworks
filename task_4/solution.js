@@ -3,7 +3,7 @@ function parseProducts(json) {
     let data = JSON.parse(json);
     let products = data.products;
 }
-return parseProducts;
+return parseProducts(products);
 
 
 function renderProductsCards(json){
