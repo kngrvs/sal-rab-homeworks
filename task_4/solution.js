@@ -1,7 +1,7 @@
 
 function parseProducts(json) {
-    data = JSON.parse(json);
-    products = data.products;
+    let data = JSON.parse(json);
+    let products = data.products;
 }
 return products;
 
