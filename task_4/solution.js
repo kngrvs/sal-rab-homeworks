@@ -2,8 +2,9 @@
 function parseProducts(json) {
     let data = JSON.parse(json);
     let products = data.products;
+    return products;
 }
-return products;
+
 
 function renderProductsCards(json){
     clearProducts();
