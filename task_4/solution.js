@@ -4,6 +4,7 @@ function parseProducts(json) {
     let products = data.products;
     return products;
 }
+parseProducts(json);
 
 function renderProductsCards(json){
     clearProducts();
