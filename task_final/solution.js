@@ -33,8 +33,9 @@
 //    }
 // }
 
-let address = {street, house, entrance, floor, flat}
+
 function sendRequest(name, phone, address, goods, sum) {
+    let address = {street, house, entrance, floor, flat};
     let data = {client: {name, phone}, order: {address, sum}, goods: []};
     
     let countOfGoods = goods.length;
