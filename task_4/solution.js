@@ -2,9 +2,8 @@
 function parseProducts(json) {
     let data = json.parse(json);
     let products = data.products;
+    return products;
 }
-return products;
-
 
 function renderProductsCards(json){
     clearProducts();
@@ -15,3 +14,4 @@ function renderProductsCards(json){
     addProduct(products[i]);
     }
 }
+renderProductsCards(json);
