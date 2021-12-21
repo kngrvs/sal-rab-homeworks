@@ -1,10 +1,10 @@
 
-function parseProducts(json) {
-    let data = json.parse(json);
+function parseProducts(JSON) {
+    let data = JSON.parse(json);
     let products = data.products;
     return products;
 }
-parseProducts(json);
+
 
 function renderProductsCards(json){
     clearProducts();
@@ -15,4 +15,3 @@ function renderProductsCards(json){
     addProduct(products[i]);
     }
 }
-renderProductsCards(json);
