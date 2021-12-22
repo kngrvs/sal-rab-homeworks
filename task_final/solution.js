@@ -39,7 +39,7 @@ function sendRequest(name, phone, address, goods, sum) {
     let data = {
         client: name + ' ' + phone, 
         order: {
-            address: {street, house, entrance, floor, flat},
+            address: data.street + data.house + data.entrance + data.floor + data.flat,
             sum,
         }, 
         goods: [],
