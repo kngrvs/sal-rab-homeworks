@@ -43,16 +43,16 @@ function sendRequest(name, phone, street, house, entrance, floor, flat, goods, s
             sum,
         }, 
         goods: [],
-   }
+    }
    
-   let countOfGoods = goods.length;
+    let countOfGoods = goods.length;
 
-   for (let i = 0; i < countOfGoods; i+=1) {  
-        data.goods[i]={
+    for (let i = 0; i < countOfGoods; i+=1) {  
+        data.goods[i] = {
             title: goods[i].title, 
             count: goods[i].count,
         };
-   }
+    }
     
     data.order.address = address;
     data.order.sum = sum;
