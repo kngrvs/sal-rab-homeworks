@@ -34,7 +34,7 @@
 // }
 
 
-function sendRequest(name, phone, address, goods, sum) {
+function sendRequest(name, phone, street, house, entrance, floor, flat, goods, sum) {
     
     let data = {
         client: name + ' ' + phone, 
