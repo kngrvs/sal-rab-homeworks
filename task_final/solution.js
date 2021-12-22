@@ -34,12 +34,12 @@
 // }
 
 
-function sendRequest(name, phone, address, goods, sum) {
+function sendRequest(name, phone, street, house, entrance, floor, flat, goods, sum) {
     
     let data = {
         client: name + ' ' + phone, 
         order: {
-            address, 
+            address: street + house + entrance + floor + flat,
             sum,
         }, 
         goods: [],
@@ -54,7 +54,7 @@ function sendRequest(name, phone, address, goods, sum) {
         };
     }
     
-    data.order.address = street + house + entrance + floor + flat;
+    data.order.address = address;
     data.order.sum = sum;
     
     let jsonData = JSON.stringify({data});
