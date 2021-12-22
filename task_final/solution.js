@@ -54,7 +54,7 @@ function sendRequest(name, phone, address, goods, sum) {
         };
     }
     
-    data.order.address = data.street + data.house + data.entrance + data.floor + data.flat;
+    data.order.address = address.street + address.house + address.entrance + address.floor + address.flat;
     data.order.sum = sum;
     
     let jsonData = JSON.stringify({data});
