@@ -52,7 +52,7 @@ function sendRequest(name, phone, address, goods, sum) {
             title,
             count,
         }
-        data.goods.push{goods[i].title};
+        data.goods.push(goods[i].title);
     }
     
     data.order.address = address;
