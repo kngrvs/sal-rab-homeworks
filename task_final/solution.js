@@ -40,21 +40,19 @@ function sendRequest(name, phone, address, goods, sum) {
         client: name + phone, 
         order: {
             address, 
-            sum
+            sum,
         }, 
-        goods: [
-            {
-                title,
-                count,
-            }
-        ]
-
+        goods: [],
    }
    
     let countOfGoods = goods.length;
 
     for (let i = 0; i <= countOfGoods; i += 1) {
-        data.goods.push(goods[i].title);
+        goods = {
+            title,
+            count,
+        }
+        data.goods.push{goods[i].title};
     }
     
     data.order.address = address;
