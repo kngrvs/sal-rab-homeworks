@@ -45,9 +45,7 @@ function sendRequest(name, phone, street, house, entrance, floor, flat, goods, s
         goods: [],
     }
    
-    let countOfGoods = goods.length;
-
-    for (let i = 0; i < countOfGoods; i+=1) {  
+    for (let i = 0; i < goods.length; i+=1) {  
         data.goods[i] = {
             title: goods[i].title, 
             count: goods[i].count,
